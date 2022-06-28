@@ -20,17 +20,19 @@
             </div>
             <div class="countdown-el mins-c">
                 <p class="big-text" id="mins">0</p>
-                <span>MINS</span>
+                <span>MINUTES</span>
             </div>
             <div class="countdown-el seconds-c">
                 <p class="big-text" id="seconds">0</p>
                 <span>SECONDS</span>
             </div>
         </div>
-        <div>
-            <div class="div-sumit">
+
+
+        <div class="popup" id="popup">
                 <input type="datetime-local" name="" id="input">
-            </div>
+                <button onclick="removepop()" class="btn">OK</button>
         </div>
+        <button class="edit" onclick="popup()">Add yours</button>
         <script src="app.js"></script>
     </body>

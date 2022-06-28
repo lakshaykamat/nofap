@@ -27,3 +27,10 @@ function start(){
     secEl.textContent = textSecond
 }
 setInterval(start,1000)
+function popup(){
+    document.getElementById('popup').classList.add("addpop")
+}
+function removepop(){
+    console.log('hello')
+    document.getElementById('popup').classList.remove('addpop')
+}

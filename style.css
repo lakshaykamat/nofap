@@ -56,33 +56,54 @@ h1 {
 .countdown-el span {
     font-size: 1.3rem;
 }
-.btn {
+input{
+    background-color: #f5eeee;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem;
+}
+.popup{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 45%;
+    padding: 1rem;
+    display: none;
+}
+.addpop{
+    display: flex;
+}
+.btn{
     border: none;
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
     border-radius: 10px;
     font-family: Arial;
     color: #000;
-    font-size: 20px;
+    font-size: 1rem;
     background: #f0e5e5;
-    padding: 10px 20px 10px 20px;
+    padding: .6rem 5rem;
     text-decoration: none;
     font-weight: bolder;
   }
-  input{
-    background-color: #f5eeee;
-    text-align: center;
-    padding: .5rem;
-    margin: 1rem;
-  }
-  input:focus{
-    outline: 5px solid #b9b9b9;
-  }
-  .div-sumit{
-    width: fit-content;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .edit{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #000;
+    font-size: 1rem;
+    background: #f0e5e5;
+    padding: .2rem;
+    text-decoration: none;
+    font-weight: normal;
   }
