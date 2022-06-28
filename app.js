@@ -4,9 +4,13 @@ const minEl = document.getElementById('mins')
 const secEl = document.getElementById('seconds')
 function start(){
     let input = document.getElementById('input').value//garbing the value
-    let inputMilli = new Date(input).getTime()//converting to millisecond(user time)
+    let store  = localStorage.setItem("Inputvalue",input)
+    let getItem = localStorage.getItem("Inputvalue")
+    
+    let inputMilli = new Date(getItem).getTime()//converting to millisecond(user time)
     let currentDate = new Date().getTime()//current time in milliseconds
     let gap = currentDate - inputMilli //subtracting to get the difference
+
     
     const second = 1000//1 second has 1000 milliseconds
     const minute = second * 60 // coverting minute to milliseconds

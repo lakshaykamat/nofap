@@ -5,8 +5,10 @@
 }
 
 body {
-    background-color: rgb(59, 56, 56);
-    color: rgb(240, 229, 229);
+    /* background-color: rgb(59, 56, 56); */
+    /* color: rgb(240, 229, 229); */
+    background-color: #00203f;
+    color: #adf0d1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +18,7 @@ body {
 }
 
 h1 {
+    text-transform: uppercase;
     font-weight: bolder;
     font-size: 4rem;
     margin:5rem 2rem 2rem 3rem ;
@@ -36,13 +39,13 @@ h1 {
 
 .big-text {
     font-weight: bold;
-    font-size: 11rem;
+    font-size: 13rem;
     line-height: 1;
     margin: 1rem 2rem;
 }
 @media screen and (max-width:768px) {
     .big-text{
-        font-size: 6rem;
+        font-size: 8rem;
     }
 }
 
@@ -67,9 +70,6 @@ h1 {
     font-weight: bolder;
   }
   input{
-    position: relative;
-    bottom: 5px;
-    right: 5px;
     background-color: #f5eeee;
     text-align: center;
     padding: .5rem;
