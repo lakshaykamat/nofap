@@ -65,11 +65,10 @@ input{
 }
 .popup{
     width: fit-content;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #909090;
     position: absolute;
     top: 45%;
@@ -77,22 +76,23 @@ input{
     display: none;
 }
 .addpop{
-    display: flex;
+    display: flex;    
 }
 .btn{
     border: none;
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
-    border-radius: 10px;
+    border-radius: 1px;
     font-family: Arial;
     color: #000;
     font-size: 1rem;
     background: #f0e5e5;
+    margin: .5rem;
     padding: .6rem 5rem;
     text-decoration: none;
     font-weight: bolder;
   }
-  .edit{
+  .edit-btn{
     position: fixed;
     right: 5px;
     bottom: 5px;
@@ -104,9 +104,10 @@ input{
     color: #000;
     font-size: 1rem;
     background: #f0e5e5;
-    padding: .2rem .5rem;
+    /* padding: .2rem .5rem; */
     text-decoration: none;
     font-weight: normal;
+    background-color: #00203f;
   }
   .svg{
     width: 25px;

@@ -4,8 +4,8 @@ const minEl = document.getElementById('mins')
 const secEl = document.getElementById('seconds')
 function start(){
     let input = document.getElementById('input').value//garbing the value
-    let store  = localStorage.setItem("Inputvalue",input)
-    let getItem = localStorage.getItem("Inputvalue")
+    let store  = localStorage.setItem("Inputvalue",input)//storing in a variable
+    let getItem = localStorage.getItem("Inputvalue")//geting the stored item
     
     let inputMilli = new Date(getItem).getTime()//converting to millisecond(user time)
     let currentDate = new Date().getTime()//current time in milliseconds
@@ -31,6 +31,5 @@ function popup(){
     document.getElementById('popup').classList.add("addpop")
 }
 function removepop(){
-    console.log('hello')
     document.getElementById('popup').classList.remove('addpop')
 }
