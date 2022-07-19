@@ -33,6 +33,8 @@ const achievement = (day)=>{
          achieveEl.textContent = "Socut"
         }else if(day == 3){
             achieveEl.textContent = "An Intern"    
+        }else{
+         achieveEl.textContent = "Thinking to add achievement here. Recommend me some keywords. Code are ready!"    
      }
 }
 setInterval(start,1000)
