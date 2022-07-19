@@ -2,6 +2,7 @@ const dayEl = document.getElementById('days')
 const hourEl = document.getElementById('hours')
 const minEl = document.getElementById('mins')
 const secEl = document.getElementById('seconds')
+const achieveEl = document.getElementById('achieve')
 
 function start(){
     let getItem = localStorage.getItem("Inputvalue")//geting the stored item
@@ -23,6 +24,16 @@ function start(){
     hourEl.textContent = textHour
     minEl.textContent = textMin
     secEl.textContent = textSecond
+    achievement(textDay)
+}
+const achievement = (day)=>{
+    if(day == 0){
+        achieveEl.textContent = "New Bee in the Town 🐝"
+     }else if(day == 1){
+         achieveEl.textContent = "Socut"
+        }else if(day == 3){
+            achieveEl.textContent = "An Intern"    
+     }
 }
 setInterval(start,1000)
 function popup(){

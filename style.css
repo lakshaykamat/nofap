@@ -112,3 +112,10 @@ input{
   .svg{
     width: 25px;
   }
+  #achievementDiv{
+    margin: .5rem;
+  }
+  #achieve{
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+  }
