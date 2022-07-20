@@ -3,7 +3,13 @@ const hourEl = document.getElementById('hours')
 const minEl = document.getElementById('mins')
 const secEl = document.getElementById('seconds')
 const achieveEl = document.getElementById('achieve')
-
+const sideBar =  document.getElementById('sidebar')
+const sidebar = ()=>{
+    sideBar.style.display = "flex"
+}
+const closeSideBar = ()=>{
+    sideBar.style.display = "none"
+}
 function start(){
     let getItem = localStorage.getItem("Inputvalue")//geting the stored item
     let inputMilli = new Date(getItem).getTime()//converting to millisecond(user time)

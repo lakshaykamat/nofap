@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
+    transition: .5s all ease;
+    /* outline: 1px solid #fff; */
     box-sizing: border-box;
 }
 
@@ -16,14 +18,41 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
-
-h1 {
+#sidebar{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: #adf0d1;
+    color: #00203f;
+    position: absolute;
+    left: 0;
+    width: 65%;
+}
+#closeSideBar{
+    cursor: pointer;
+    right: 10px;
+    top:10px;
+    position: absolute;
+    width: 25px;
+}
+#sidebar div{
+    padding: .6rem;
+    display: block;
+}
+.achieveName{
+    margin: 1.5rem 1rem;
+}
+h3{
+    margin:2rem auto 0 auto;
+}
+.h1 {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 4rem;
     margin:5rem 2rem 2rem 3rem ;
     width: fit-content;
     text-align: center;
+    /* margin: auto; */
 }
 @media screen and (max-width:525px) {
     h1{
@@ -110,6 +139,13 @@ input{
     background-color: #00203f;
   }
   .svg{
+    width: 25px;
+  }
+  .star{
+    cursor: pointer;
+    left: 3px;
+    top: 10px;
+    position: absolute;
     width: 25px;
   }
   #achievementDiv{
