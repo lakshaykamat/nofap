@@ -113,9 +113,15 @@ input{
     width: 25px;
   }
   #achievementDiv{
-    margin: .5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    flex-wrap: wrap;
   }
   #achieve{
-    /* font-weight: bold; */
+    padding: .5rem;
+    text-align: center;
     font-size: 1.3rem;
   }

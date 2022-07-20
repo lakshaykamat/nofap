@@ -28,11 +28,13 @@ function start(){
 }
 const achievement = (day)=>{
     if(day == 0){
-        achieveEl.textContent = "New Bee in the Town 🐝"
+        achieveEl.textContent = "New Bee 🐝"
      }else if(day == 1){
          achieveEl.textContent = "Socut"
         }else if(day == 3){
             achieveEl.textContent = "An Intern"    
+        }else if(day == 5){
+            achieveEl.textContent = "Believer"
         }else{
          achieveEl.textContent = "Thinking to add achievement here. Recommend me some keywords. Code are ready!"    
      }
