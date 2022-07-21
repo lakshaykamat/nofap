@@ -26,7 +26,22 @@ body {
     color: #00203f;
     position: absolute;
     left: 0;
-    width: 65%;
+    width: 75%;
+    animation-name:sidebarAni;
+    animation-duration: .7s;
+}
+@keyframes sidebarAni {
+    from{
+        left:-50%
+    }
+    to{
+        left: 0;
+    }
+}
+@media screen and (min-width:670px){
+    #sidebar{
+        width: 30%;
+    }
 }
 #closeSideBar{
     cursor: pointer;
@@ -39,8 +54,19 @@ body {
     padding: .6rem;
     display: block;
 }
+h3{
+    text-align: center;
+}
 .achieveName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     margin: 1.5rem 1rem;
+}
+.item{
+    text-align: center;
 }
 h3{
     margin:2rem auto 0 auto;

@@ -4,6 +4,7 @@ const minEl = document.getElementById('mins')
 const secEl = document.getElementById('seconds')
 const achieveEl = document.getElementById('achieve')
 const sideBar =  document.getElementById('sidebar')
+const achievementName = document.getElementById('achieveName')
 const sidebar = ()=>{
     sideBar.style.display = "flex"
 }
@@ -35,13 +36,39 @@ function start(){
 const achievement = (day)=>{
     if(day == 0){
         achieveEl.textContent = "New Bee 🐝"
-     }else if(day == 1){
-         achieveEl.textContent = "Socut"
+        achievementName.children[1].style.color = 'Green'
+    }else if(day == 1){
+        achieveEl.textContent = "Scout 🔫"
+        achievementName.children[1].style.color = 'Green'
+        achievementName.children[2].style.color = 'Green'
         }else if(day == 3){
-            achieveEl.textContent = "An Intern"    
+            achieveEl.textContent = "An Intern"   
+            achievementName.children[1].style.color = 'Green'
+            achievementName.children[2].style.color = 'Green' 
+            achievementName.children[3].style.color = 'Green' 
         }else if(day == 5){
-            achieveEl.textContent = "Believer"
-        }else{
+            achieveEl.textContent = "Corporal"
+            achievementName.children[1].style.color = 'Green'
+            achievementName.children[2].style.color = 'Green'
+            achievementName.children[3].style.color = 'Green'
+            achievementName.children[4].style.color = 'Green'
+        }else if(day == 7){
+            achieveEl.textContent = "Sergeant"
+            achievementName.children[1].style.color = 'Green'
+            achievementName.children[2].style.color = 'Green'
+            achievementName.children[3].style.color = 'Green'
+            achievementName.children[4].style.color = 'Green'
+            achievementName.children[5].style.color = 'Green'
+        }else if(day == 10){
+            achieveEl.textContent = "Master Sergeant"
+            achievementName.children[1].style.color = 'Green'
+            achievementName.children[2].style.color = 'Green'
+            achievementName.children[3].style.color = 'Green'
+            achievementName.children[4].style.color = 'Green'
+            achievementName.children[5].style.color = 'Green'
+            achievementName.children[6].style.color = 'Green'
+        }
+        else{
          achieveEl.textContent = "Thinking to add achievement here. Recommend me some keywords. Code are ready!"    
      }
 }
